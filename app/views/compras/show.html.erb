@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre cliente:</strong>
+  <%= @compra.nombre_cliente %>
+</p>
+
+<p>
+  <strong>Apellido cliente:</strong>
+  <%= @compra.apellido_cliente %>
+</p>
+
+<p>
+  <strong>Monto compra:</strong>
+  <%= @compra.monto_compra %>
+</p>
+
+<p>
+  <strong>Cantidad productos:</strong>
+  <%= @compra.cantidad_productos %>
+</p>
+
+<p>
+  <strong>Fecha compra:</strong>
+  <%= @compra.fecha_compra %>
+</p>
+
+<%= link_to 'Edit', edit_compra_path(@compra), class:'button radius default' %> |
+<%= link_to 'Back', compras_path,class:'button radius secondary'%>
